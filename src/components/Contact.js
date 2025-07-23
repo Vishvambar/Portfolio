@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { FaLinkedin, FaGithub, FaMapMarkerAlt, FaFileAlt } from 'react-icons/fa';
+import { FaLinkedin,FaPhone, FaGithub, FaMapMarkerAlt, FaFileAlt } from 'react-icons/fa';
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -64,6 +64,13 @@ const Contact = () => {
       icon: FaMapMarkerAlt,
       title: "Location",
       value: "Pune, Maharashtra",
+      link: null,
+      color: "text-purple-500"
+    },
+    {
+     icon: FaPhone,
+      title: "Phone",
+      value: "+91 9699605574",
       link: null,
       color: "text-purple-500"
     }
