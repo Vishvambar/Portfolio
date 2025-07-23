@@ -16,12 +16,13 @@ const Projects = () => {
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }
       ],
       liveDemo: "https://talkbuddy-demo.vercel.app",
-      github: "https://github.com/vishvambar/talkbuddy",
+      github: "https://github.com/Vishvambar/Talkbuddy",
       features: ["AI conversation", "Speech recognition", "Real-time feedback"],
       category: "AI & Machine Learning",
-      status: "Production Ready",
+      status: "In MVP phase",
       metrics: { stars: 45, views: "2.3k", complexity: "Advanced" },
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-purple-500 to-pink-500",
+      Live: false
     },
     {
       id: 2,
@@ -33,13 +34,15 @@ const Projects = () => {
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" },
         { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" }
       ],
-      liveDemo: "https://image-uploader-demo.netlify.app",
-      github: "https://github.com/vishvambar/smart-image-uploader",
+      liveDemo: "https://imageuploader-v1.netlify.app",
+      github: "https://github.com/Vishvambar/ImageUploader",
       features: ["Drag & drop", "Image compression", "Progress tracking"],
       category: "Frontend Tools",
-      status: "Production Ready",
+      status: "Active",
       metrics: { stars: 32, views: "1.8k", complexity: "Intermediate" },
-      gradient: "from-green-500 to-blue-500"
+      gradient: "from-green-500 to-blue-500",
+      Live: true
+
     },
     {
       id: 3,
@@ -51,13 +54,14 @@ const Projects = () => {
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }
       ],
-      liveDemo: "https://movie-discovery-demo.netlify.app",
-      github: "https://github.com/vishvambar/movie-discovery-hub",
+      liveDemo: "https://moviesearch-alpha.vercel.app/",
+      github: "https://github.com/Vishvambar/movie-search-app",
       features: ["TMDB API", "Bookmarking", "Advanced search"],
       category: "Web Application",
-      status: "Production Ready",
+      status: "Active",
       metrics: { stars: 28, views: "1.5k", complexity: "Intermediate" },
-      gradient: "from-red-500 to-orange-500"
+      gradient: "from-red-500 to-orange-500",
+      Live:true
     },
     {
       id: 4,
@@ -74,9 +78,11 @@ const Projects = () => {
       github: "https://github.com/vishvambar/notevault",
       features: ["JWT authentication", "Dark mode", "Real-time sync"],
       category: "Full-Stack Development",
-      status: "Production Ready",
+      status: "Active",
       metrics: { stars: 38, views: "2.1k", complexity: "Advanced" },
-      gradient: "from-blue-500 to-purple-500"
+      gradient: "from-blue-500 to-purple-500",
+      Live: true
+
     },
     {
       id: 5,
@@ -88,13 +94,14 @@ const Projects = () => {
         { name: "Node.js", icon: FaNodeJs, color: "text-green-600" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" }
       ],
-      liveDemo: "https://organic-grocery-demo.vercel.app",
-      github: "https://github.com/vishvambar/organic-grocery",
+      liveDemo: "https://vishvambar.github.io/organic-ecommerce-platform",
+      github: "https://github.com/Vishvambar/organic-ecommerce-platform",
       features: ["Product filters", "Shopping cart", "Payment gateway"],
       category: "E-Commerce",
-      status: "Production Ready",
+      status: "Active",
       metrics: { stars: 42, views: "2.8k", complexity: "Advanced" },
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-green-500 to-emerald-500",
+      Live: true
     },
     {
       id: 6,
@@ -107,7 +114,8 @@ const Projects = () => {
       ],
       liveDemo: "https://recipe-search-demo.netlify.app",
       github: "https://github.com/vishvambar/recipe-search",
-      features: ["Ingredient search", "Dietary filters", "Nutrition info"]
+      features: ["Ingredient search", "Dietary filters", "Nutrition info"],
+      Live: true
     },
     {
       id: 7,
@@ -120,7 +128,8 @@ const Projects = () => {
       ],
       liveDemo: "https://bakery-shop-demo.netlify.app",
       github: "https://github.com/vishvambar/bakery-shop",
-      features: ["Product showcase", "Contact form", "Responsive design"]
+      features: ["Product showcase", "Contact form", "Responsive design"],
+      Live: true
     },
     {
       id: 8,
@@ -133,7 +142,8 @@ const Projects = () => {
       ],
       liveDemo: "https://kids-coding-demo.vercel.app",
       github: "https://github.com/vishvambar/kids-coding-platform",
-      features: ["Interactive lessons", "Coding games", "Progress tracking"]
+      features: ["Interactive lessons", "Coding games", "Progress tracking"],
+      Live: true
     }
   ];
 
@@ -176,9 +186,9 @@ const Projects = () => {
             Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Here's a showcase of my recent full-stack projects that demonstrate my expertise in 
-            <span className="font-semibold text-blue-600 dark:text-blue-400"> modern web development</span>, 
-            <span className="font-semibold text-purple-600 dark:text-purple-400"> AI integration</span>, and 
+            Here's a showcase of my recent full-stack projects that demonstrate my expertise in
+            <span className="font-semibold text-blue-600 dark:text-blue-400"> modern web development</span>,
+            <span className="font-semibold text-purple-600 dark:text-purple-400"> AI integration</span>, and
             <span className="font-semibold text-green-600 dark:text-green-400"> scalable solutions</span>
           </p>
           <div className="mt-8 flex justify-center space-x-8">
@@ -213,7 +223,7 @@ const Projects = () => {
             >
               {/* Gradient Header */}
               <div className={`h-2 bg-gradient-to-r ${project.gradient || 'from-blue-500 to-purple-500'}`}></div>
-              
+
               {/* Status Badge */}
               <div className="absolute top-4 right-4 z-10">
                 <span className="px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full shadow-lg">
@@ -229,20 +239,20 @@ const Projects = () => {
                       {project.title}
                     </h3>
                   </div>
-                  
+
                   {project.subtitle && (
                     <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-2">
                       {project.subtitle}
                     </p>
                   )}
-                  
+
                   {project.category && (
                     <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-semibold rounded-full">
                       {project.category}
                     </span>
                   )}
                 </div>
-                
+
                 {/* Description */}
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed text-sm">
                   {project.description}
@@ -271,7 +281,7 @@ const Projects = () => {
                     </div>
                   </div>
                 )}
-                
+
                 {/* Tech Stack */}
                 <div className="mb-6">
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
@@ -293,7 +303,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Key Features */}
                 <div className="mb-8">
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
@@ -311,20 +321,24 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-                
+
                 {/* Action Buttons */}
                 <div className="flex space-x-3">
-                  <motion.a
-                    href={project.liveDemo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 text-center shadow-lg hover:shadow-xl"
-                  >
-                    <FaExternalLinkAlt className="inline mr-2" />
-                    Live Demo
-                  </motion.a>
+                  {project.Live && (
+                    <motion.a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 text-center shadow-lg hover:shadow-xl"
+                    >
+                      <FaExternalLinkAlt className="inline mr-2" />
+                      Live Demo
+                    </motion.a>
+                  )}
+
+
                   <motion.a
                     href={project.github}
                     target="_blank"
@@ -338,7 +352,7 @@ const Projects = () => {
                   </motion.a>
                 </div>
               </div>
-              
+
               {/* Hover Effect Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/5 group-hover:to-purple-600/5 transition-all duration-300 pointer-events-none"></div>
             </motion.div>
