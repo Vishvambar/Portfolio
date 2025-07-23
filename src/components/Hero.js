@@ -2,9 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  function openpage(){
-window.open('/resume')
-  }
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-16">
       <div className="container mx-auto px-6 text-center">
