@@ -1,0 +1,22 @@
+{
+  "name": "Vishvambar Udavant - B.Tech CSE Student | Problem Solver | Project Builder",
+  "short_name": "Vishvambar Udavant",
+  "description": "B.Tech Computer Science student at MIT ADT University building impactful tech projects",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0ea5e9",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait"
+}
