@@ -20,7 +20,7 @@ const Projects = () => {
       features: ["AI conversation", "Speech recognition", "Real-time feedback"],
       category: "AI & Machine Learning",
       status: "In MVP phase",
-      metrics: { stars: 45, views: "2.3k", complexity: "Advanced" },
+      metrics: {  complexity: "Advanced" },
       gradient: "from-purple-500 to-pink-500",
       Live: false
     },
@@ -113,6 +113,7 @@ const Projects = () => {
         { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" }
       ],
       liveDemo: "https://recipe-search-demo.netlify.app",
+      metrics: {  complexity: "Intermediate" },
       github: "https://github.com/vishvambar/recipe-search",
       features: ["Ingredient search", "Dietary filters", "Nutrition info"],
       Live: true
@@ -127,6 +128,7 @@ const Projects = () => {
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }
       ],
       liveDemo: "https://bakery-shop-demo.netlify.app",
+      metrics: {  complexity: "Intermediate" },
       github: "https://github.com/vishvambar/bakery-shop",
       features: ["Product showcase", "Contact form", "Responsive design"],
       Live: true
@@ -141,6 +143,7 @@ const Projects = () => {
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }
       ],
       liveDemo: "https://kids-coding-demo.vercel.app",
+      metrics: {  complexity: "Advanced" },
       github: "https://github.com/vishvambar/kids-coding-platform",
       features: ["Interactive lessons", "Coding games", "Progress tracking"],
       Live: true
@@ -180,7 +183,7 @@ const Projects = () => {
         >
           <div className="inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium mb-4">
             <FaStar className="mr-2" />
-            8+ Production-Ready Projects
+            8 + Projects
           </div>
           <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
@@ -261,7 +264,7 @@ const Projects = () => {
                 {/* Metrics Row */}
                 {project.metrics && (
                   <div className="flex items-center justify-between mb-6 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="flex items-center space-x-1 text-yellow-500">
+                    {/* <div className="flex items-center space-x-1 text-yellow-500">
                       <FaStar className="w-4 h-4" />
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         {project.metrics.stars}
@@ -272,7 +275,7 @@ const Projects = () => {
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         {project.metrics.views}
                       </span>
-                    </div>
+                    </div> */}
                     <div className="flex items-center space-x-1 text-purple-500">
                       <FaCode className="w-4 h-4" />
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
