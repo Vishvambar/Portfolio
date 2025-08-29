@@ -54,8 +54,8 @@ const Projects = () => {
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }
       ],
-      liveDemo: "https://moviesearch-alpha.vercel.app/",
-      github: "https://github.com/Vishvambar/movie-search-app",
+      liveDemo: "https://movie-search-vishu.vercel.app/",
+      github: "https://github.com/Vishvambar/movie-search",
       features: ["TMDB API", "Bookmarking", "Advanced search"],
       category: "Web Application",
       status: "Active",
