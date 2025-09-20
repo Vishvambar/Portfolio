@@ -406,6 +406,9 @@ const FaJs = ({ className }) => (
 const FaStar = ({ className }) => (
     <svg className={className} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
 );
+const FaNextjs = ({ className }) => (
+    <svg className={className} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.3H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.4z"></path></svg>
+);
 
 const FaCode = ({ className }) => (
     <svg className={className} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.5c-4.8-4.5-12.4-4.3-17 .5L431.6 159.4c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg>
@@ -431,6 +434,12 @@ const FaRazorpay = ({ className }) => (
     <svg className={className} fill="currentColor" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6S6.698 2.4 12 2.4s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zM9.53 7.2l5.065 8.106V7.2h1.874v9.6h-1.507L9.897 8.694V16.8H8V7.2h1.53z"></path></svg>
 );
 
+const FaTailwindcss = ({ className }) => (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6S6.698 2.4 12 2.4s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zM9.53 7.2l5.065 8.106V7.2h1.874v9.6h-1.507L9.897 8.694V16.8H8V7.2h1.53z"></path></svg>
+);
+const FaMongoDb = ({ className }) => (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6S6.698 2.4 12 2.4s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zM9.53 7.2l5.065 8.106V7.2h1.874v9.6h-1.507L9.897 8.694V16.8H8V7.2h1.53z"></path></svg>
+);
 // --- End of SVG Icon Components ---
 
 const Projects = () => {
@@ -495,11 +504,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      type: 'lab',
+      type: 'core',
       title: "Smart Image Uploader",
       subtitle: "Advanced File Management",
-      description: "Engineered a client-side image processor that achieved a 70% average reduction in file size, improving upload times significantly before backend submission.",
-      techStack: [ { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }, { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" } ],
+      description: "Developed an image upload and retrieval system with a Express backend and MongoDB database.",
+      techStack: [{name: "Express", icon: FaNodeJs, color: "text-green-500" }, {name :"MongoDB", icon: FaMongoDb, color: "text-green-500" }, { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "JavaScript", icon: FaJs, color: "text-yellow-500" }, { name: "TAILWIND CSS", icon: FaTailwindcss, color: "text-blue-500" } ],
       liveDemo: "https://imageuploader-v1.netlify.app",
       github: "https://github.com/Vishvambar/ImageUploader",
       features: ["Drag & drop", "Image compression", "Progress tracking"],
@@ -519,6 +528,21 @@ const Projects = () => {
       github: "https://github.com/Vishvambar/movie-search",
       features: ["TMDB API", "Bookmarking", "Advanced search"],
       category: "Web Application",
+      metrics: { stars: 28, views: "1.5k", complexity: "Intermediate" },
+      gradient: "from-red-500 to-orange-500",
+      Live:true
+    },
+    {
+      id: 7,
+      type: 'core',
+      title: "ElevanLabs Clone",
+      subtitle: "Backend Development",
+      description: "Built a backend for a clone of ElevanLabs, a platform for learning and sharing knowledge.",
+      techStack: [ { name: "Next.js", icon: FaNextjs, color: "text-green-500" }, { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "MongoDB", icon: FaMongoDb, color: "text-green-500" } ],
+      liveDemo: "https://elevanslab.vercel.app/",
+      github: "https://github.com/Vishvambar/elevanslab_project",
+      features: ["Language Translation", "Audio Transcription", "Real-time Collaboration"],
+      category: "Backend Development",
       metrics: { stars: 28, views: "1.5k", complexity: "Intermediate" },
       gradient: "from-red-500 to-orange-500",
       Live:true
