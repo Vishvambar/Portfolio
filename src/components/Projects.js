@@ -391,6 +391,10 @@ const FaNodeJs = ({ className }) => (
     <svg className={className} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M439.4 243.6L246.5 19.1c-15.6-15.6-40.9-15.6-56.6 0l-193 193c-15.6 15.6-15.6 40.9 0 56.6l193 193c15.6 15.6 40.9 15.6 56.6 0l193-193c15.6-15.6 15.6-40.9 0-56.6zM245 391.8V120.2c0-9.4-10-15.1-18.4-10.9L84.9 231.7c-7.9 3.9-7.9 14.8 0 18.7l141.8 122.4c8.4 4.2 18.4-1.5 18.4-10.9z"></path></svg>
 );
 
+const FaCss3 = ({ className }) => (
+    <svg className={className} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L224 390.2l105.7-40.6 16-82H82.3L42.2 51.4H480z"></path></svg>
+);
+
 const FaHtml5 = ({ className }) => (
     <svg className={className} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.3H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.4z"></path></svg>
 );
@@ -447,14 +451,14 @@ const Projects = () => {
     {
       id: 1,
       type: 'core',
-      title: "TalkBuddy",
-      subtitle: "AI-Powered Language Coach",
-      description: "Building An AI-powered spoken English coach that provides real-time feedback to improve fluency and confidence.",
-      techStack: [ { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "OpenAI API", icon: SiNextdotjs, color: "text-green-600" }, { name: "JavaScript", icon: FaJs, color: "text-yellow-500" } ],
-      liveDemo: "https://talkbuddy-ashy.vercel.app/",
-      github: "https://github.com/Vishvambar/Talkbuddy",
-      features: ["AI conversation", "Speech recognition", "Real-time feedback"],
-      category: "AI & Machine Learning",
+      title: "Cream & Crunch",
+      subtitle: "Bakery Shop Website",
+      description: "Developed a Cream and Crunch bakery website using Html and CSS and JS. Integrated Razorpay for secure payments.",
+      techStack: [ {name: "Razorpay", icon: FaRazorpay, color: "text-purple-500" }, { name: "HTML", icon: FaHtml5, color: "text-blue-500" }, { name: "CSS", icon: FaCss3, color: "text-green-600" }, { name: "JavaScript", icon: FaJs, color: "text-yellow-500" } ],
+      liveDemo: "https://vishvambar.github.io/cream-crunch/",
+      github: "https://github.com/Vishvambar/cream-crunch",
+      features: ["Razorpay integration", "Secure payments", "User-friendly interface"],
+      category: "Web Development",
       metrics: { complexity: "Advanced" },
       gradient: "from-purple-500 to-pink-500",
       Live: true
@@ -474,6 +478,7 @@ const Projects = () => {
       gradient: "from-blue-500 to-purple-500",
       Live: false
     },
+    
     {
       id: 8,
       type: 'core',
@@ -488,19 +493,35 @@ const Projects = () => {
       Live: true
     },
     {
-      id: 5,
+      id: 2,
       type: 'core',
-      title: "Organic Grocery E-Commerce",
-      subtitle: "E-Commerce Platform",
-      description: "Built a Static e-commerce site. Implemented Razorpay for secure payments.",
-      techStack: [ {name : "Razorpay", icon: FaRazorpay, color: "text-green-500" }, { name: "Javascript", icon: FaJs, color: "text-blue-500" }, { name: "CSS", icon: FaCss3Alt, color: "text-green-600" }, { name: "HTML", icon: FaHtml5, color: "text-cyan-500" } ],
-      liveDemo: "https://vishvambar.github.io/organic-ecommerce-platform",
-      github: "https://github.com/Vishvambar/organic-ecommerce-platform",
-      features: ["Product filters", "Shopping cart", "Payment gateway"],
-      category: "E-Commerce",
-      metrics: { stars: 42, views: "2.8k", complexity: "Advanced" },
-      gradient: "from-green-500 to-emerald-500",
+      title: "TalkBuddy",
+      subtitle: "AI-Powered Language Coach",
+      description: "Building An AI-powered spoken English coach that provides real-time feedback to improve fluency and confidence.",
+      techStack: [ { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "OpenAI API", icon: SiNextdotjs, color: "text-green-600" }, { name: "JavaScript", icon: FaJs, color: "text-yellow-500" } ],
+      liveDemo: "https://talkbuddy-ashy.vercel.app/",
+      github: "https://github.com/Vishvambar/Talkbuddy",
+      features: ["AI conversation", "Speech recognition", "Real-time feedback"],
+      category: "AI & Machine Learning",
+      metrics: { complexity: "Advanced" },
+      gradient: "from-purple-500 to-pink-500",
       Live: true
+    },
+    
+    {
+      id: 7,
+      type: 'core',
+      title: "ElevanLabs Clone",
+      subtitle: "Backend Development",
+      description: "Built a backend for a clone of ElevanLabs, a platform for learning and sharing knowledge.",
+      techStack: [ { name: "Next.js", icon: FaNextjs, color: "text-green-500" }, { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "MongoDB", icon: FaMongoDb, color: "text-green-500" } ],
+      liveDemo: "https://elevanslab.vercel.app/",
+      github: "https://github.com/Vishvambar/elevanslab_project",
+      features: ["Language Translation", "Audio Transcription", "Real-time Collaboration"],
+      category: "Backend Development",
+      metrics: { stars: 28, views: "1.5k", complexity: "Intermediate" },
+      gradient: "from-red-500 to-orange-500",
+      Live:true
     },
     {
       id: 2,
@@ -517,35 +538,21 @@ const Projects = () => {
       gradient: "from-green-500 to-blue-500",
       Live: true
     },
+    
     {
-      id: 3,
-      type: 'lab',
-      title: "Movie Discovery Hub",
-      subtitle: "Entertainment Platform",
-      description: "Built a performant movie discovery app fetching from the TMDB API, featuring a debounced search function that reduced API calls by 80% during user typing.",
-      techStack: [ { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" }, { name: "JavaScript", icon: FaJs, color: "text-yellow-500" } ],
-      liveDemo: "https://movie-search-vishu.vercel.app/",
-      github: "https://github.com/Vishvambar/movie-search",
-      features: ["TMDB API", "Bookmarking", "Advanced search"],
-      category: "Web Application",
-      metrics: { stars: 28, views: "1.5k", complexity: "Intermediate" },
-      gradient: "from-red-500 to-orange-500",
-      Live:true
-    },
-    {
-      id: 7,
+      id: 5,
       type: 'core',
-      title: "ElevanLabs Clone",
-      subtitle: "Backend Development",
-      description: "Built a backend for a clone of ElevanLabs, a platform for learning and sharing knowledge.",
-      techStack: [ { name: "Next.js", icon: FaNextjs, color: "text-green-500" }, { name: "React", icon: FaReact, color: "text-blue-500" }, { name: "MongoDB", icon: FaMongoDb, color: "text-green-500" } ],
-      liveDemo: "https://elevanslab.vercel.app/",
-      github: "https://github.com/Vishvambar/elevanslab_project",
-      features: ["Language Translation", "Audio Transcription", "Real-time Collaboration"],
-      category: "Backend Development",
-      metrics: { stars: 28, views: "1.5k", complexity: "Intermediate" },
-      gradient: "from-red-500 to-orange-500",
-      Live:true
+      title: "Organic Grocery E-Commerce",
+      subtitle: "E-Commerce Platform",
+      description: "Built a Static e-commerce site. Implemented Razorpay for secure payments.",
+      techStack: [ {name : "Razorpay", icon: FaRazorpay, color: "text-green-500" }, { name: "Javascript", icon: FaJs, color: "text-blue-500" }, { name: "CSS", icon: FaCss3Alt, color: "text-green-600" }, { name: "HTML", icon: FaHtml5, color: "text-cyan-500" } ],
+      liveDemo: "https://vishvambar.github.io/organic-ecommerce-platform",
+      github: "https://github.com/Vishvambar/organic-ecommerce-platform",
+      features: ["Product filters", "Shopping cart", "Payment gateway"],
+      category: "E-Commerce",
+      metrics: { stars: 42, views: "2.8k", complexity: "Advanced" },
+      gradient: "from-green-500 to-emerald-500",
+      Live: true
     },
     
   ];
@@ -681,12 +688,12 @@ const Projects = () => {
         </div>
 
         {/* Labs & Experiments Section */}
-        <div>
+        {/* <div>
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">Practice & Experiments</h3>
           <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {labProjects.map((project) => <ProjectCard project={project} key={project.id} />)}
           </motion.div>
-        </div>
+        </div> */}
 
       </div>
     </section>
