@@ -15,7 +15,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+            className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-6"
           >
             Hi, I'm <span className="text-blue-600 dark:text-blue-400">Vishvambar Udavant</span>
           </motion.h1>
@@ -24,19 +24,18 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 font-light"
+            className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 font-light leading-relaxed"
           >
-            B.Tech CSE Student | Problem Solver | Project Builder
+            Crafting solutions that empower learning, working, and growth.
           </motion.p>
           
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+            className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            2nd-year B.Tech Computer Science student at MIT ADT University, Pune. I'm passionate about 
-            building impactful tech projects, exploring AI tools, and solving real-world problems through software.
+            A 2nd-year B.Tech Computer Science student at MIT ADT University, Pune. Passionate about creating impactful tech projects, exploring AI innovations, and solving real-world challenges through software.
           </motion.p>
           
           <motion.div
@@ -47,13 +46,13 @@ const Hero = () => {
           >
             <a
               href="/resume"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105 shadow-lg"
             >
               View Resume
             </a>
             <a
               href="#contact"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-white"
+              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-white"
             >
               Contact Me
             </a>
