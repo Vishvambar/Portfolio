@@ -4,18 +4,7 @@ import { FaGraduationCap, FaCode, FaLightbulb, FaRocket } from 'react-icons/fa';
 
 const About = () => {
   const highlights = [
-    {
-      icon: FaGraduationCap,
-      title: "Student",
-      description: "2nd-year B.Tech Computer Science student at MIT ADT University, Pune",
-      color: "text-blue-500"
-    },
-    {
-      icon: FaCode,
-      title: "Project Builder",
-      description: "Building impactful tech projects and exploring AI tools to solve real problems",
-      color: "text-green-500"
-    },
+    
     {
       icon: FaLightbulb,
       title: "Problem Solver",
@@ -81,22 +70,12 @@ const About = () => {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Hello! I'm <strong className="text-blue-600 dark:text-blue-400">Vishvambar Udavant</strong>, 
-                a 2nd-year B.Tech Computer Science student at MIT ADT University, Pune. I'm passionate about 
-                building impactful tech projects, exploring AI tools, and solving real-world problems through software.
+                a 2nd-year CSE student who hates building toy projects. My focus is shipping real MVPs that people can use. I care about feedback loops: build fast, test with users, measure what works, and cut what doesn’t.
               </p>
+              <br></br>
 
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I specialize in full-stack web development with modern technologies like React.js, Node.js, 
-                and various APIs. What drives me is the ability to turn innovative ideas into functional, 
-                user-friendly applications. I'm constantly exploring new technologies, especially AI tools 
-                like OpenAI API, Whisper, and Groq LLaMA to build cutting-edge solutions.
-              </p>
-
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Currently, I'm focused on building a diverse portfolio of projects that showcase my skills 
-                in web development, AI integration, and problem-solving. I believe in learning through 
-                hands-on projects and am always eager to take on new challenges that push the boundaries 
-                of what's possible with technology.
+              Long-term, I’m training myself to think like a product engineer: not just coding features, but designing systems that scale, are measurable, and actually help people.
               </p>
             </div>
 

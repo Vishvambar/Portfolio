@@ -112,7 +112,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4"
             >
-              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Vishvambar Udavant</span>
+              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Vishvambar</span>
             </motion.h1>
             
             <motion.p
@@ -145,10 +145,10 @@ const Hero = () => {
               <a href="#contact" aria-label="Contact Me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-300 transform hover:scale-125">
                 <MailIcon className="w-8 h-8" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-300 transform hover:scale-125">
+              <a href="https://github.com/Vishvambar" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-300 transform hover:scale-125">
                 <GithubIcon className="w-8 h-8" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-300 transform hover:scale-125">
+              <a href="https://www.linkedin.com/in/vishvambar-udavant/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-300 transform hover:scale-125">
                 <LinkedinIcon className="w-8 h-8" />
               </a>
             </motion.div>
