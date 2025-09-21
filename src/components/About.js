@@ -122,38 +122,6 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* Additional Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Let's Build Something Amazing Together</h3>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto mb-6">
-              I'm always excited to collaborate on interesting projects or discuss new opportunities. 
-              Whether you have a project in mind or just want to connect, I'd love to hear from you!
-            </p>
-            <div className="flex justify-center space-x-4">
-              <a
-                href="#contact"
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
-              >
-                Get In Touch
-              </a>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
-              >
-                Download Resume
-              </a>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

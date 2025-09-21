@@ -158,22 +158,6 @@ const Education = () => {
                     ))}
                 </motion.div>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.5 }}
-                    viewport={{ once: true }}
-                    className="mt-16 text-center"
-                >
-                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-white max-w-6xl mx-auto">
-                        <h3 className="text-2xl font-bold mb-4">Academic Focus</h3>
-                        <p className="text-lg opacity-90 max-w-3xl mx-auto">
-                            My academic journey is complemented by hands-on project experience and a strong focus on
-                            modern web technologies. I'm actively building my expertise in full-stack development
-                            while maintaining excellent academic performance.
-                        </p>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );
